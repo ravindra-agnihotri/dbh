@@ -1,17 +1,21 @@
 {
-  "name": "dory-bakehouse-gallery",
+  "name": "dory-bakehouse",
   "version": "1.0.0",
-  "description": "Gallery with HEIC conversion, compression, upload and runtime listing",
   "main": "server.js",
+  "type": "commonjs",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "npm install --build-from-source sharp"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.21.2",
-    "heic-convert": "^2.1.0",
-    "multer": "^1.4.5-lts.1",
-    "sharp": "^0.32.6",
-    "uuid": "^9.0.1"
+    "express": "^4.18.2",
+    "multer": "^1.4.5",
+    "sharp": "^0.33.0",
+    "heic-convert": "^2.2.0",
+    "uuid": "^9.0.0",
+    "cors": "^2.8.5"
   }
 }
